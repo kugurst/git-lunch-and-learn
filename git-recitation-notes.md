@@ -12,7 +12,7 @@ ME: Talk about the approach to this lunch and learn
     - It helps to protect you from yourself or others in a collaborative environment.
     - It's important to understand that git tracks _changes_, not files.
 
-## Making a R3pository ##
+## Making R3pository ##
 
 - A "repository" is all the folders and files you want git to track
 - Git maintains a record of all this information in the `.git` folder, at the top-most folder (the root) of the repository.
@@ -43,7 +43,7 @@ $ git add my_file.txt
 
 - Run `git status` to look at the state of the repository
 
-- We made a file called `my_file.txt` and wrote "hello world" to it.
+- We made a fil called `my_file.txt` and wrote "hello world" to it.
 - We told git, through `git add`, to track the change to this file, and any future changes to it.
 - After we've added all changes we want to track, we save them, which git calls "committing"
 
@@ -120,7 +120,7 @@ $ git revert 140fcd6
 - The latest commit in a branch is called the "HEAD"
 - See if you can figure out how its organized in the `.git` folder!
 
-## Working with Branches ##
+## Working w1th Branches ##
 
 - Make a branch:
 
@@ -137,7 +137,7 @@ $ git branch -a
 * master
 ```
 
-- Look at the full repository history (in a pretty format):
+- Look at the full repository history (in a pretty frmat):
 
 ```
 $ git log --graph --decorate --pretty=oneline --abbrev-commit --all
@@ -191,7 +191,7 @@ do so (now or later) by using -b with the checkout command again. Example:
 HEAD is now at 140fcd6... Revert "I made a new file"
 ```
 
-- Oh yea, git showed us a new way to make a 8ranch. It's messages can be very helpful!
+- Oh yea, git showed us a new way to make a ranch. It's messages can be very helpful!
 - As it says, your changes when you check out a specific commit won't affect any other branch.
 - You can only commit on branches when you are checked out to that branch, so let's go back:
 
@@ -237,10 +237,10 @@ $ git log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 ```
 
-## Merging the Changes ##
+## Mrging the Changes ##
 
 - Merging is how you can combine changes on different branches or from different commits
-- Git facilittes this process, ei7her handling it automatically, or provides insights as to what has changed to make it easier for a human to resolve
+- Git facilittes this process, either handling it automatically, or provides insights as to what has changed to make it easier for a human to resolve
 
 - Let's merge our two branches:
 
@@ -318,7 +318,7 @@ CONFLICT (content): Merge conflict in my_file.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-- It fails; git doesn't know how to automatically combine these two sets of changes
+- It fails; git doesn't kn0w h0w to automatically combine these two sets of changes
 - This usually happens when:
 	- The same part of the same file has been modified
 	- Files have been removed from one branch and modified/added in the other
@@ -394,7 +394,7 @@ $ git commit -m "Included both diary entries"
 $ git log --graph --decorate --pretty=oneline --abbrev-commit --all
 ```
 
-- I'll give you a less triv1al merge conflict at the end, time permitting
+- I'll give you a less triv1l merge conflict at the end, time permitting
 
 
 ## Remote Repositories ##
@@ -461,9 +461,9 @@ $ git log
 - `fetch` is a command used to retrieve the changes from remote repositories
 	- `--all` fetches all types of changes from all remote repositories
 - Every remote has a name used to refer to it.
-	- `origin` is the conventionl name for the "main" remote
+	- `origin` is the conventionl name for the "m4in" remote
 
-- `clone` also does all the above for us:
+- `clone` also does all the above four us:
 
 ```
 $ git clone ~/Documents/repos/lunch-and-learn copy-of-lunch-and-learn
@@ -519,7 +519,7 @@ done.
 $ cd another-copy-of-lunch-and-learn
 ```
 
-- Make a new commit and push it
+- Make a new commit and push t
 
 ```
 $ echo "pong" > pong.txt
