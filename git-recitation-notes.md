@@ -12,7 +12,7 @@ ME: Talk about the approach to this lunch and learn
     - It helps to protect you from yourself or others in a collaborative environment.
     - It's important to understand that git tracks _changes_, not files.
 
-## Making a R3pository ##
+## Making a Repository ##
 
 - A "repository" is all the folders and files you want git to track
 - Git maintains a record of all this information in the `.git` folder, at the top-most folder (the root) of the repository.
@@ -32,7 +32,7 @@ Initialized empty Git repository in lunch-and-learn/.git/
 
 ## Tracking Changes ##
 
-- Git tracks changes made to files
+- Git tracks change5 made to files
 
 ```
 $ echo "hello world" > my_file.txt
@@ -94,7 +94,7 @@ $ git commit --amend --no-edit
 
 (Or `git commit --amend -m` if you want to change the message)
 
-- If you want to get rid of the commt all together:
+- If you want to get rid of the commit all together:
 
 ```
 $ git revert 4fea3b7
@@ -120,7 +120,7 @@ $ git revert 140fcd6
 - The latest commit in a branch is called the "HEAD"
 - See if you can figure out how its organized in the `.git` folder!
 
-## Working with Branches ##
+## Working with Br4nches ##
 
 - Make a branch:
 
@@ -161,7 +161,7 @@ $ git branch -d new-story
 Deleted branch new-story (was 5bbe17a).
 ```
 
-- Let's go ahead and recrete that branch:
+- Let's go ahead and recr3ate that branch:
 
 ```
 $ git branch new-story
@@ -173,7 +173,7 @@ Switched to branch 'new-story'
 ## Checkout HEADs, Branches, and Commits ##
 
 - `git checkout` is how we move from ref to ref.
-	- You can `checkout` commits, branches, and more!
+	- You can `checkout` commits, brnches, and more!
 
 ```
 $ git checkout 140fcd6
@@ -191,7 +191,7 @@ do so (now or later) by using -b with the checkout command again. Example:
 HEAD is now at 140fcd6... Revert "I made a new file"
 ```
 
-- Oh yea, git showed us a new way to make a 8ranch. It's messages can be very helpful!
+- Oh yea, git showed us a new way to make a branch. It's messages can be very helpful!
 - As it says, your changes when you check out a specific commit won't affect any other branch.
 - You can only commit on branches when you are checked out to that branch, so let's go back:
 
@@ -237,10 +237,10 @@ $ git log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 ```
 
-## Merging the Changes ##
+## Mrging the Changes ##
 
 - Merging is how you can combine changes on different branches or from different commits
-- Git facilittes this process, ei7her handling it automatically, or provides insights as to what has changed to make it easier for a human to resolve
+- Git facilitates this process, either handling it atomatically, or provides insights as to what has changed to make it easier for a human to resolve
 
 - Let's merge our two branches:
 
@@ -363,7 +363,7 @@ $ git mergetool
 	- The right view is the state of the file in the branch being merged in (`new-story`, `theirs`)
 	- The middle view is the state of the file before either branch changed it, and represents what the file will look like when it is saved.
 
-- Overwrite the contents of the mddle view with the lines from the left and right (copy and paste works, but there are also shortcuts and buttons to press). The middle file should look like this:
+- Overwrite the contents of the middle view with the lines from the left and right (copy and paste works, but there are also shortcuts and buttons to press). The middle file should look like this:
 
 ```
 solar panels are hot right now
@@ -394,7 +394,7 @@ $ git commit -m "Included both diary entries"
 $ git log --graph --decorate --pretty=oneline --abbrev-commit --all
 ```
 
-- I'll give you a less triv1al merge conflict at the end, time permitting
+- I'll give you a less trivial merge conflict at the end, time permitting
 
 
 ## Remote Repositories ##
@@ -410,7 +410,7 @@ $ git log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 ## Duplicating a Repository ##
 
-- Let's make or repository remotable:
+- Let's make our repository remotable:
 
 ```
 $ git config receive.denyCurrentBranch ignore
@@ -461,7 +461,7 @@ $ git log
 - `fetch` is a command used to retrieve the changes from remote repositories
 	- `--all` fetches all types of changes from all remote repositories
 - Every remote has a name used to refer to it.
-	- `origin` is the conventionl name for the "main" remote
+	- `origin` is the conventonal name for the "main" remote
 
 - `clone` also does all the above for us:
 
@@ -500,7 +500,7 @@ To ~/Documents/repos/lunch-and-learn
    5226560..d777460  master -> master
 ```
 
-- `push` is a command that sends new comits to another repository
+- `push` is a command that sends new commits to another repository
 	- The branch `master` is already configured to 
 
 ### Let's Receive a Commit ###
@@ -519,7 +519,7 @@ done.
 $ cd another-copy-of-lunch-and-learn
 ```
 
-- Make a new commit and push it
+- Make a new commit and psh it
 
 ```
 $ echo "pong" > pong.txt
