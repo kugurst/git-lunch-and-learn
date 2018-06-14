@@ -1,24 +1,29 @@
 # Git Lunch and Learn Notes #
 
+ME: Talk about the approach to this lunch and learn
+
 - What is git?
     - Git is a tool to track your code and its history of changes
     - It uses a fully decentralized model
         - You can make changes independent of other developers
         - You can use all features of git, regardless of network connectivity
     - It makes experimenting with new features and bug fixes easy
+        - Branches and their flexibility makes it easy to experiment
 
+## Making a Repository ##
 
-# Repository Created during Recitation #
+- A "repository" is all the folders and files you want git to track
+- Git maintains a record of all this information in the `.git` folder, at the top-most folder (the root) of the repository.
 
-## Make the Repository ##
+```
+$ mkdir my_repository
+>>>
+$ cd my_repository
+>>>
+$ git init
+>>> Initialized empty Git repository in my_repository/.git/
+```
 
-        cd /c/Users/$USERNAME/Documents
-        mkdir git-lunch-and-learn
-        cd git-lunch-and-learn
-        git init
+- We made a directory called `my_repository`, and told git to start tracking changes inside of it
 
-Explaining these commands:
-- We **c**hange **d**irectories to our `Documents` folder.
-- We **m**a**k**e a new **dir**ectory called `git-lunch-and-learn`
-- We go into that directory we just made
-- We create a new git repository
+#
